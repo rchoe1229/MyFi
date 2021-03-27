@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import "./AppStyles.js";
+import { Grid } from "@material-ui/core";
+import useStyles from "./styles";
+import {
+  PushToTalkButton,
+  PushToTalkButtonContainer,
+  ErrorPanel,
+} from "@speechly/react-ui";
+
+import IncomeExpense from "./components/Income-Expense/IncomeExpense";
+import ExpenseTracker from "./components/ExpenseTracker/ExpenseTracker";
 
 function App() {
+  const classes = useStyles();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Grid
+        className={classes.grid}
+        container
+        spacing={0}
+        alignItems="center"
+        justify="center"
+      >
+        <Grid item xs={12} sm={3} className={classes.mobile}>
+          <IncomeExpense title="Income" />
+        </Grid>
+        <Grid item xs={12} sm={3} className={classes.main}>
+          <ExpenseTracker />
+        </Grid>
+        <Grid item xs={12} sm={3} className={classes.desktop}>
+          <IncomeExpense title="Income" />
+        </Grid>
+        <Grid item xs={12} sm={3} >
+          <IncomeExpense title="Expense" />
+        </Grid>
+      </Grid>
+      <PushToTalkButtonContainer>
+        <PushToTalkButton />
+        <ErrorPanel />
+      </PushToTalkButtonContainer>
     </div>
   );
 }
