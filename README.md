@@ -32,7 +32,7 @@ MyFi allows users to keep track of their income and expenses utilizing a simple 
 
 ## Status
 
-MVP
+MVP. Working on implementing backend with Node Auth
 
 ## Technologies
 
