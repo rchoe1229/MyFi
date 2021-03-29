@@ -1,11 +1,10 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import {
   Card,
   CardHeader,
   CardContent,
   Typography,
   Grid,
-  Cardider,
   Divider,
 } from "@material-ui/core";
 import useStyles from "./styles";
