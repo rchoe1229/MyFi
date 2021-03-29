@@ -53,7 +53,7 @@ MVP
 
 ## Contact
 
-Personal Website
-- [ryan.choe.com](https://ryanachoe.com/)
-LinkedIn
-- [Ryan Choe](https://www.linkedin.com/in/ryanchoe1229/)
+- Personal Website
+  - [ryan.choe.com](https://ryanachoe.com/)
+- LinkedIn
+  - [Ryan Choe](https://www.linkedin.com/in/ryanchoe1229/)
