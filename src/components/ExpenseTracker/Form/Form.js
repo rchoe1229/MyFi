@@ -42,6 +42,7 @@ export default function Form() {
       amount: Number(formData.amount),
       id: uuidv4(),
     };
+    console.log(transaction)
     setOpen(true)
     addTransaction(transaction);
     setFormData(initialState);

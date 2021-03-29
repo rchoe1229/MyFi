@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# MyFi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Keeping everyone financially aware no matter the circumstance
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- General Info
+- Video
+- Features
+- Status
+- Challenges
+- Contact
+- Technologies
 
-### `npm start`
+## General Info
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+MyFi allows users to keep track of their income and expenses utilizing a simple form or by using a button to record all transactions!
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Video
 
-### `npm test`
+[Watch the video!]
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- Node Login and Authorization
+- Speech driven transaction creations
+- Tracks your total balance including separate sections to track:
+  - Income
+  - Expense
+- Graphicial display of your income
+- Graphicial display of your expense
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Status
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+MVP
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies
 
-### `npm run eject`
+- JavaScript
+- Node
+- Express.js
+- Knex
+- Speechly
+- Material-UI
+- Context API
+- Chart.js 2
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Challenges
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node Backend
+- Auth
+- Speechly
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Contact
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Personal Website
+- [ryan.choe.com](https://ryanachoe.com/)
+LinkedIn
+- [Ryan Choe](https://www.linkedin.com/in/ryanchoe1229/)

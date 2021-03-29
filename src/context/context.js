@@ -3,6 +3,7 @@ import { useReducer, createContext } from "react";
 
 import contextReducer from "./contextReducer";
 
+// GET Fetch??
 const initialState = JSON.parse(localStorage.getItem("transactions")) || [];
 
 export const ExpenseTrackerContext = createContext(initialState);
