@@ -106,7 +106,7 @@ export default function Form() {
 
   return (
     <Grid container spacing={2}>
-      <CustomSnackbar />
+      <CustomSnackbar open={open} setOpen={setOpen}/>
       <Grid item xs={12}>
         <Typography align="center" variant="subtitle2" gutterBottom>
           {segment && segment.words.map((word) => word.value).join(" ")}

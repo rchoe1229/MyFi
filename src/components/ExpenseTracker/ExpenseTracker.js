@@ -12,6 +12,7 @@ import useStyles from "./styles";
 import Form from "./Form/Form";
 import List from "../List/List";
 import { ExpenseTrackerContext } from "../../context/context";
+import InfoCard from '../Snackbar/InfoCard'
 
 export default function ExpenseTracker() {
   const classes = useStyles();
@@ -28,8 +29,7 @@ export default function ExpenseTracker() {
           variant="subtitle1"
           style={{ lineHeight: "1.5em", marginTop: "20px" }}
         >
-          {/* { InfoCard } */}
-          Add income for $100
+          <InfoCard />
         </Typography>
         <Divider />
         <Form />

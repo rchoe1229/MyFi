@@ -1,4 +1,5 @@
 import "./AppStyles.js";
+import './App.css'
 import { Grid } from "@material-ui/core";
 import useStyles from "./styles";
 import {
@@ -20,6 +21,7 @@ function App() {
         spacing={0}
         alignItems="center"
         justify="center"
+        style={{ height: '100vh' }}
       >
         <Grid item xs={12} sm={3} className={classes.mobile}>
           <IncomeExpense title="Income" />
@@ -34,7 +36,7 @@ function App() {
           <IncomeExpense title="Expense" />
         </Grid>
       </Grid>
-      <PushToTalkButtonContainer>
+      <PushToTalkButtonContainer >
         <PushToTalkButton />
         <ErrorPanel />
       </PushToTalkButtonContainer>
