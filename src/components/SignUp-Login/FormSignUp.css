@@ -29,22 +29,18 @@
 }
 
 .form h1 {
-  text-align: center;
-      font-size:30px; font-weight:300; color:#f3f3f3; letter-spacing:1px;
-      display: grid;
-      grid-template-columns: 1fr max-content 1fr;
-      grid-template-rows: 20px 0;
-      grid-gap: 20px;
-      align-items: center;
-  }
-  
-.form h1:after,.seven h1:before {
-    content: " ";
-    display: block;
-    border-bottom: 1px solid #c50000;
-    border-top: 1px solid #c50000;
-    height: 5px;
-  background-color:#f8f8f8;
+    text-align: center;
+    font-weight: normal;
+    color: #fff;
+    font-size: 2em;
+    white-space: nowrap;
+    font-size: 6vw;
+    z-index: 1000;
+    font-family: 'Bangers', ;
+    text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7);
+    @include skew(0, -6.7deg, false);
+    @include transition-property(font-size);
+    @include transition-duration(0.5s);
 }
 
 .form h2 {

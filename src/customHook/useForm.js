@@ -1,6 +1,7 @@
 import { useState } from "react";
 import validate from "../components/SignUp-Login/validateInfo";
 const signUpUrl = "http://localhost:3001/sign-up"
+const loginUrl = "http://localhost:3001/login"
 
 
 const useForm = () => {
@@ -9,7 +10,7 @@ const useForm = () => {
     age: "",
     username: "",
     password: "",
-    password2: ""
+    password2: "",
   });
   const [errors, setErrors] = useState({});
 
@@ -26,24 +27,39 @@ const useForm = () => {
     setErrors(validate(values))
     const newValues = {...values}
     delete newValues.password2
-    
-    fetch(signUpUrl, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(newValues),
-      // redirect: "http://localhost:3000"
-    })
-    .then(res => res.json())
-    .then(res => {
-      if(res.errors){
-        this.setState({alerts: Response.errors})
-      }
-      else {
-        localStorage.setItem('token', res.token)
-      }
-    })
+
+    if(newValues.name){
+      fetch(signUpUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newValues),
+      })
+      .then(res => res.json())
+      .then(res => {
+        if(res.errors){
+          this.setState({alerts: Response.errors})
+        }
+      })
+    } else {
+      fetch(loginUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newValues),
+      })
+      .then(res => res.json())
+      .then(res => {
+        if(res.errors){
+          this.setState({alerts: Response.errors})
+        }
+        else {
+          localStorage.setItem('token', res.token)
+        }
+      })
+    }
   }
   return { handleChange, values, handleSubmit, errors };
 };
