@@ -1,9 +1,8 @@
-.App {
-  display: flex;
-  justify-content: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
-.Grid {
-  margin: 10px;
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
 }
