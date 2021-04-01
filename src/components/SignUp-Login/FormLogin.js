@@ -3,17 +3,20 @@ import useForm from "../../customHook/useForm";
 import validate from "./validateInfo";
 import "./FormLogin.css";
 
-export default function FormSignup() {
-  const { handleChange, values, handleSubmit, errors } = useForm(validate);
+export default function FormSignup({ history }) {
+  console.log(history);
+  const { handleChange, values, handleSubmit, errors } = useForm(
+    validate,
+    history
+  );
   return (
     <div className="form-container">
       <div className="form-content">
         <form className="form" onSubmit={handleSubmit}>
-          <h1>
-            MyFi
-          </h1>
+          <h1>MyFi</h1>
           <h2>
-            Welcome Back! Let us continue to help with your financial budgetting!
+            Welcome Back! Let us continue to help with your financial
+            budgetting!
           </h2>
           <div className="form-inputs">
             <label htmlFor="username" className="form-label">
@@ -64,7 +67,8 @@ export default function FormSignup() {
             Login
           </button>
           <span className="form-input-login">
-            Do not have an account? Create an account <a href="http://localhost:3000/">here</a>
+            Do not have an account? Create an account{" "}
+            <a href="http://localhost:3000/">here</a>
           </span>
         </form>
       </div>

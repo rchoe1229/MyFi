@@ -10,8 +10,8 @@ export default function App() {
     <div>
       <Switch>
         <Route path="/" exact component={FormSignup} />
-        <FormLogin path="/login" component={FormLogin}/>
-        <MainPage path="/main" component={MainPage}/>
+        <Route path="/login" component={FormLogin}/>
+        <Route path="/main" component={MainPage}/>
       </Switch>
     </div>
   );
