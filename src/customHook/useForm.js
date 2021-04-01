@@ -41,7 +41,7 @@ const useForm = () => {
         if(res.errors){
           this.setState({alerts: res.errors})
         }
-        return res.redirect("http://localhost:3001/login")
+        // return res.redirect("http://localhost:3001/login")
       })
     } else {
       fetch(loginUrl, {
@@ -54,8 +54,7 @@ const useForm = () => {
       .then(res => res.json())
       .then(res => {
         if(res.errors){
-          this.setState({alerts: Response.errors})
-          res.redirect("/main")
+          this.setState({alerts: res.errors})
         }
         else {
           localStorage.setItem('token', res.token)
