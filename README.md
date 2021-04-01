@@ -18,7 +18,7 @@ MyFi allows users to keep track of their income and expenses utilizing a simple 
 
 ## Video
 
-[Watch the video!]
+[Coming Soon!]
 
 ## Features
 
@@ -32,7 +32,7 @@ MyFi allows users to keep track of their income and expenses utilizing a simple 
 
 ## Status
 
-MVP. Working on implementing backend with Node Auth
+MVP Achieved. Working on implementing custom routes
 
 ## Technologies
 
@@ -44,6 +44,8 @@ MVP. Working on implementing backend with Node Auth
 - Material-UI
 - Context API
 - Chart.js 2
+- React Router
+- JSONWebTokens
 
 ## Challenges
 

@@ -40,8 +40,8 @@ const useForm = () => {
       .then(res => {
         if(res.errors){
           this.setState({alerts: res.errors})
-          return res.redirect("/login")
         }
+        return res.redirect("http://localhost:3001/login")
       })
     } else {
       fetch(loginUrl, {
