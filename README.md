@@ -40,6 +40,7 @@ MVP Achieved. Working on implementing custom routes
 - Node
 - Express.js
 - Knex
+- PostgreSQL
 - Speechly
 - Material-UI
 - Context API
