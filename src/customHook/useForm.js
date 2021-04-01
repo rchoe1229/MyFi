@@ -39,7 +39,8 @@ const useForm = () => {
       .then(res => res.json())
       .then(res => {
         if(res.errors){
-          this.setState({alerts: Response.errors})
+          this.setState({alerts: res.errors})
+          return res.redirect("/login")
         }
       })
     } else {
@@ -54,12 +55,14 @@ const useForm = () => {
       .then(res => {
         if(res.errors){
           this.setState({alerts: Response.errors})
+          res.redirect("/main")
         }
         else {
           localStorage.setItem('token', res.token)
         }
       })
-    }
+      // .then(res.redirect("http://localhost:3000/main"))
+      }
   }
   return { handleChange, values, handleSubmit, errors };
 };

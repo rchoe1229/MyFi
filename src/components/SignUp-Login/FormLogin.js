@@ -64,7 +64,7 @@ export default function FormSignup() {
             Login
           </button>
           <span className="form-input-login">
-            Do not have an account? Create an account <a href="http://localhost:3000/signup">here</a>
+            Do not have an account? Create an account <a href="http://localhost:3000/">here</a>
           </span>
         </form>
       </div>
