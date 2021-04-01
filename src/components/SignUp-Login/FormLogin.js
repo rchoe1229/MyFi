@@ -48,7 +48,7 @@ export default function FormSignup({ history }) {
             />
             {errors.password && <p>{errors.password}</p>}
           </div>
-          <div className="form-inputs">
+          {/* <div className="form-inputs">
             <label htmlFor="password2" className="form-label">
               Confirm Password
             </label>
@@ -62,7 +62,7 @@ export default function FormSignup({ history }) {
               onChange={handleChange}
             />
             {errors.password2 && <p>{errors.password2}</p>}
-          </div>
+          </div> */}
           <button className="form-input-btn" type="submit">
             Login
           </button>
