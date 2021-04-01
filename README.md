@@ -23,16 +23,17 @@ MyFi allows users to keep track of their income and expenses utilizing a simple 
 ## Features
 
 - Node Login and Authorization
-- Speech driven transaction creations
+- Create transactions with speech driven technology
 - Tracks your total balance including separate sections to track:
   - Income
   - Expense
 - Graphicial display of your income
 - Graphicial display of your expense
+- List of all transactions with dates and general description
 
 ## Status
 
-MVP Achieved. Working on implementing custom routes
+MVP Achieved. 
 
 ## Technologies
 

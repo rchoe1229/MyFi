@@ -31,11 +31,25 @@ export const Provider = ({ children }) => {
   // Action Creators & Fetch w/ Options
   const deleteTransaction = (id) => {
     dispatch({ type: "DELETE_TRANSACTION", payload: id });
-    fetch(transactionsUrl + `/${id}`, { method: "DELETE" });
+    // fetch(transactionsUrl + `/${id}`, { method: "DELETE" });
   };
 
   const addTransaction = (transaction) => {
     dispatch({ type: "ADD_TRANSACTION", payload: transaction });
+    // fetch("transactionsURL", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //     "Authorization": "Bearer (token)"
+    //   },
+    //   body: JSON.stringify(transaction),
+    // })
+    // .then(res => res.json())
+    // .then(res => {
+    //   if(res.errors){
+    //     this.setState({alerts: res.errors})
+    //   }
+    // })
   };
 
   const balance = transactions.reduce((acc, currVal) => {
